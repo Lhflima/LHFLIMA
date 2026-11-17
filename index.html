@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bella Beleza | Natura, Mary Kay e O Boticário</title>
+  <meta name="description" content="Revenda de produtos de beleza Natura, Mary Kay e O Boticário. Perfumes, maquiagem, skincare e cuidados para o corpo com entrega rápida." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="topbar">Frete grátis acima de R$ 150 · Parcele em até 6x sem juros · Atendimento pelo WhatsApp</div>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">Bella<span>Beleza</span></a>
+      <nav class="nav" id="nav">
+        <a href="#marcas">Marcas</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#categorias">Categorias</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <div class="header__actions">
+        <button class="cart-btn" id="cartBtn" aria-label="Abrir carrinho">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6h15l-1.5 9h-12z"/><path d="M6 6 5 3H2"/><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero__overlay"></div>
+    <div class="container hero__content">
+      <p class="hero__tag">Sua consultora de beleza online</p>
+      <h1>Beleza que combina<br />com você</h1>
+      <p>Os produtos que você ama das marcas Natura, Mary Kay e O Boticário, com atendimento personalizado e entrega rápida.</p>
+      <div class="hero__cta">
+        <a href="#produtos" class="btn btn--primary">Ver produtos</a>
+        <a href="#marcas" class="btn btn--ghost">Conhecer marcas</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="benefits container">
+    <div class="benefit"><span>🚚</span><div><strong>Entrega rápida</strong><p>Envio para todo o Brasil</p></div></div>
+    <div class="benefit"><span>💳</span><div><strong>Até 6x sem juros</strong><p>Pix, cartão ou boleto</p></div></div>
+    <div class="benefit"><span>✅</span><div><strong>Produtos originais</strong><p>Direto das marcas</p></div></div>
+    <div class="benefit"><span>🎁</span><div><strong>Embalagem presente</strong><p>Grátis em todo pedido</p></div></div>
+  </section>
+
+  <section class="section container" id="marcas">
+    <h2 class="section__title">Nossas marcas</h2>
+    <p class="section__subtitle">Escolha sua marca favorita e descubra os lançamentos</p>
+    <div class="brands">
+      <button class="brand-card brand-card--natura" data-brand="Natura">
+        <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=800&q=80" alt="Produtos de cuidados naturais" loading="lazy" />
+        <div class="brand-card__info"><h3>Natura</h3><p>Biodiversidade brasileira e sustentabilidade</p></div>
+      </button>
+      <button class="brand-card brand-card--marykay" data-brand="Mary Kay">
+        <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=800&q=80" alt="Maquiagem e cosméticos" loading="lazy" />
+        <div class="brand-card__info"><h3>Mary Kay</h3><p>Maquiagem e skincare de alta performance</p></div>
+      </button>
+      <button class="brand-card brand-card--boticario" data-brand="O Boticário">
+        <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=800&q=80" alt="Frascos de perfume" loading="lazy" />
+        <div class="brand-card__info"><h3>O Boticário</h3><p>Perfumaria e cuidados com carinho brasileiro</p></div>
+      </button>
+    </div>
+  </section>
+
+  <section class="section container" id="categorias">
+    <h2 class="section__title">Categorias</h2>
+    <div class="categories">
+      <button class="category" data-category="Perfumaria"><img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?w=400&q=80" alt="Perfumaria" loading="lazy" /><span>Perfumaria</span></button>
+      <button class="category" data-category="Maquiagem"><img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=400&q=80" alt="Maquiagem" loading="lazy" /><span>Maquiagem</span></button>
+      <button class="category" data-category="Skincare"><img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400&q=80" alt="Skincare" loading="lazy" /><span>Skincare</span></button>
+      <button class="category" data-category="Corpo e Banho"><img src="https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?w=400&q=80" alt="Corpo e banho" loading="lazy" /><span>Corpo e Banho</span></button>
+      <button class="category" data-category="Cabelos"><img src="https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?w=400&q=80" alt="Cabelos" loading="lazy" /><span>Cabelos</span></button>
+    </div>
+  </section>
+
+  <section class="section container" id="produtos">
+    <h2 class="section__title">Produtos em destaque</h2>
+    <div class="toolbar">
+      <div class="filters" id="brandFilters">
+        <button class="chip active" data-brand="Todas">Todas</button>
+        <button class="chip" data-brand="Natura">Natura</button>
+        <button class="chip" data-brand="Mary Kay">Mary Kay</button>
+        <button class="chip" data-brand="O Boticário">O Boticário</button>
+      </div>
+      <div class="toolbar__right">
+        <input type="search" id="search" placeholder="Buscar produto..." />
+        <select id="categorySelect">
+          <option value="Todas">Todas as categorias</option>
+          <option>Perfumaria</option>
+          <option>Maquiagem</option>
+          <option>Skincare</option>
+          <option>Corpo e Banho</option>
+          <option>Cabelos</option>
+        </select>
+        <select id="sortSelect">
+          <option value="relevancia">Relevância</option>
+          <option value="menor">Menor preço</option>
+          <option value="maior">Maior preço</option>
+        </select>
+      </div>
+    </div>
+    <div class="products" id="products"></div>
+    <p class="empty" id="empty" hidden>Nenhum produto encontrado. Tente outra busca.</p>
+  </section>
+
+  <section class="promo">
+    <div class="container promo__inner">
+      <div>
+        <h2>Kits presenteáveis com até 30% OFF</h2>
+        <p>Monte o presente perfeito para quem você ama. Embalagem especial inclusa!</p>
+        <a href="#produtos" class="btn btn--light">Aproveitar</a>
+      </div>
+      <img src="https://images.unsplash.com/photo-1607602132700-068258431c6c?w=800&q=80" alt="Kit de presente de beleza" loading="lazy" />
+    </div>
+  </section>
+
+  <section class="section container" id="depoimentos">
+    <h2 class="section__title">Quem compra, recomenda</h2>
+    <div class="testimonials">
+      <blockquote><p>“Atendimento maravilhoso! Recebi meu perfume em 2 dias, super bem embalado.”</p><cite>— Juliana M., São Paulo</cite></blockquote>
+      <blockquote><p>“Consegui montar meu kit de skincare com ajuda da consultora. Amei o resultado!”</p><cite>— Carla S., Belo Horizonte</cite></blockquote>
+      <blockquote><p>“Preço ótimo e produtos originais. Já virei cliente fiel.”</p><cite>— Renata A., Curitiba</cite></blockquote>
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <div class="container newsletter__inner">
+      <h2>Receba ofertas exclusivas</h2>
+      <p>Cadastre-se e ganhe 10% de desconto na primeira compra.</p>
+      <form id="newsletterForm">
+        <input type="email" placeholder="Seu melhor e-mail" required />
+        <button class="btn btn--primary" type="submit">Quero desconto</button>
+      </form>
+      <p class="newsletter__msg" id="newsletterMsg" hidden>Obrigada! Seu cupom é <strong>BELLA10</strong> 💖</p>
+    </div>
+  </section>
+
+  <footer class="footer" id="contato">
+    <div class="container footer__grid">
+      <div>
+        <a href="#" class="logo logo--light">Bella<span>Beleza</span></a>
+        <p>Revendedora independente de produtos de beleza. Atendimento personalizado para você ficar ainda mais linda.</p>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <p>📱 WhatsApp: (11) 99999-9999</p>
+        <p>✉️ contato@bellabeleza.com.br</p>
+        <p>📍 São Paulo - SP</p>
+      </div>
+      <div>
+        <h4>Atendimento</h4>
+        <p>Seg a Sex: 9h às 19h</p>
+        <p>Sábado: 9h às 14h</p>
+      </div>
+      <div>
+        <h4>Pagamento</h4>
+        <p>Pix · Cartão de crédito · Boleto</p>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span id="year"></span> Bella Beleza. Site de revenda independente. Natura, Mary Kay e O Boticário são marcas registradas de seus respectivos proprietários. Imagens ilustrativas (Unsplash).</p>
+    </div>
+  </footer>
+
+  <!-- Carrinho -->
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart" id="cart" aria-label="Carrinho">
+    <div class="cart__header">
+      <h3>Seu carrinho</h3>
+      <button id="closeCart" aria-label="Fechar">✕</button>
+    </div>
+    <div class="cart__items" id="cartItems"></div>
+    <div class="cart__footer">
+      <div class="cart__total"><span>Total</span><strong id="cartTotal">R$ 0,00</strong></div>
+      <button class="btn btn--primary btn--block" id="checkoutBtn">Finalizar pelo WhatsApp</button>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
